@@ -908,12 +908,12 @@ document.addEventListener('DOMContentLoaded', function() {
     // CONSOLE BRANDING
     // =====================================================
     console.log(
-        '%c 🏥 Doctor\'s Website ',
-        'background: linear-gradient(135deg, #0d9488, #0f766e); color: white; font-size: 20px; padding: 15px 25px; border-radius: 10px; font-weight: bold;'
+        '%c 🏥 Dr. Tejaswini Penugondla ',
+        'background: linear-gradient(135deg, #a82348, #85173a); color: white; font-size: 20px; padding: 15px 25px; border-radius: 10px; font-weight: bold;'
     );
     console.log(
-        '%c Built with ❤️ for Better Healthcare ',
-        'color: #0d9488; font-size: 14px; padding: 10px 0;'
+        '%c Gynecologist • Srikara Hospitals, Lakdikapul • Built with ❤️ ',
+        'color: #85173a; font-size: 14px; padding: 10px 0;'
     );
 });
 

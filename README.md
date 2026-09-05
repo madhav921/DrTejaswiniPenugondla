@@ -1,169 +1,96 @@
-# 🏥 Doctor's Professional Website
+# 🏥 Dr. Tejaswini Penugondla — Gynecologist Website
 
-A beautiful, modern, and fully responsive website template designed for medical professionals. Built with pure HTML, CSS, and JavaScript - no frameworks required!
+A beautiful, modern, and fully responsive website for **Dr. Tejaswini Penugondla**, Gynecologist at **Srikara Hospitals, Lakdikapul, Hyderabad**. Built with pure HTML, CSS, and JavaScript — no frameworks required.
 
 ## ✨ Features
 
-### Design
-- **Minimalistic & Clean UI** - Professional medical aesthetic with calming teal color palette
-- **Premium Animations** - Smooth scroll animations, hover effects, parallax, magnetic buttons
-- **Fully Responsive** - Perfect on all devices (desktop, tablet, mobile)
-- **Glass Morphism Effects** - Modern frosted glass UI elements
-- **Dark Footer** - Professional contrast with gradient accents
+- **Burgundy / Maroon & White** color theme (matches Srikara Hospitals branding)
+- **Premium animations** — smooth scroll reveals, hover effects, parallax, magnetic buttons, animated counters
+- **Fully responsive** — desktop, tablet, and mobile
+- **SEO optimized** — meta tags, Open Graph, Twitter Cards, Schema.org Physician markup
+- **Auto-fallback images** — placeholders show automatically until real photos are added
 
-### Sections Included
-1. **Top Bar** - Contact info & social links
-2. **Sticky Header** - Navigation with smooth scroll
-3. **Hero Section** - Animated background, stats counter, CTA buttons
-4. **Features** - Why choose us cards with hover effects
-5. **About** - Doctor profile with credentials
-6. **Services** - 6 service cards with flip animation
-7. **Gallery** - Lightbox with keyboard navigation
-8. **Testimonials** - Auto-sliding carousel with touch support
-9. **FAQ** - Smooth accordion
-10. **Appointment Form** - Full validation & success modal
-11. **Contact** - Map embed, contact form, social links
-12. **Footer** - Links, services, contact info
+### Sections
+1. Top bar (contact + social)
+2. Sticky navigation
+3. Hero with stats (10+ years, 4000+ patients, 1500+ procedures)
+4. Why Choose Us
+5. About the Doctor
+6. Services (6 areas of expertise)
+7. Clinic Gallery (with lightbox)
+8. Testimonials (carousel)
+9. FAQ (accordion)
+10. Appointment booking form
+11. Contact (map + form + details)
+12. Footer
 
-### Technical Features
-- **SEO Optimized** - Meta tags, Open Graph, Twitter Cards, Schema.org markup
-- **Accessibility** - ARIA labels, skip links, keyboard navigation
-- **Performance** - Lazy loading images, optimized CSS, minimal JS
-- **Free Hosting Ready** - Static files, works with GitHub Pages, Netlify, Vercel
+## 🖼️ Images To Add
 
-## 🚀 Quick Start
+Drop these into the `images/` folder. Until you do, the site shows styled placeholders automatically.
 
-1. **Download/Clone** the files to your computer
-2. **Open `index.html`** in your browser to preview
-3. **Edit placeholders** - Search for `[` to find all placeholders
-4. **Add your images** to the `images/` folder
-5. **Deploy** to your preferred hosting
+| File | Purpose | Recommended Size |
+|------|---------|-----------------|
+| `logo.png` | Srikara Hospitals logo (header) | ~200x60px, transparent |
+| `logo-white.png` | White logo for dark footer | ~200x60px, transparent |
+| `doctor-hero.png` | Dr. Tejaswini photo (hero) | 600x760px, transparent bg ideal |
+| `doctor-about.jpg` | Dr. Tejaswini photo (about) | 600x700px |
+| `gallery-1.jpg` … `gallery-6.jpg` | Clinic photos | 800x600px |
+| `patient-1.jpg` … `patient-4.jpg` | Testimonial photos (optional) | 150x150px |
+| `og-image.jpg` | Social sharing preview | 1200x630px |
+| `favicon-32x32.png`, `favicon-16x16.png` | Browser tab icon | 32px / 16px |
 
-## 📁 File Structure
+## ✅ Content Already Filled In
 
-```
-webpage/
-├── index.html          # Main HTML file
-├── styles.css          # All styles (1600+ lines)
-├── script.js           # Interactive features (500+ lines)
-├── images/             # Your images folder
-│   ├── logo.png
-│   ├── logo-white.png
-│   ├── doctor-hero.png
-│   ├── doctor-about.jpg
-│   ├── gallery-1.jpg to gallery-6.jpg
-│   ├── patient-1.jpg to patient-4.jpg
-│   ├── og-image.jpg    # Social sharing image
-│   └── favicon files
-└── README.md           # This file
-```
+- Name, specialty, hospital, tagline
+- Bio & personal quote
+- Stats: 10+ years, 4000+ patients, 1500+ procedures
+- All 6 services with descriptions
+- All 4 FAQs
+- Full contact details, phones, email, working hours
+- Social links (Facebook, Instagram, website, WhatsApp)
 
-## 🎨 Customization
+## ⏳ Content Still To Add (currently placeholders)
 
-### Colors
-Edit CSS variables in `styles.css`:
+- **Doctor photos** (hero + about)
+- **Clinic photos** (gallery)
+- **Real testimonials** — the 4 shown are sample reviews. Replace the text in the "Testimonials" section of `index.html` with genuine patient reviews (with permission).
+- **Credentials** — education, certifications, awards were not provided. Add them in the "About" section's `about-details` block when available.
+- **Exact Google Maps location** — currently searches "Srikara Hospitals Lakdikapul". For a precise pin, get the embed code from Google Maps and replace the `<iframe src>` in the Contact section.
+
+## 🚀 Deploying to GitHub Pages
+
+Your GitHub username is **madhav921**. For a clean URL, name the repo `dr-tejaswini` (not `DrTejaswiniPenugondla.github.io`).
+
+1. Put `index.html`, `styles.css`, `script.js`, and the `images/` folder at the **root** of the repo (not inside a subfolder).
+2. Push to GitHub.
+3. Repo → **Settings** → **Pages** → Source: branch `main`, folder `/ (root)` → **Save**.
+4. Wait 1–2 minutes. Your site will be live at:
+   ```
+   https://madhav921.github.io/dr-tejaswini/
+   ```
+
+> If you rename the repo to exactly `madhav921.github.io`, it will instead be served at `https://madhav921.github.io/` (root). You only get one such user site per account.
+
+## 📧 Making the Forms Actually Send
+
+Right now the appointment and contact forms show a success popup but don't email anyone. Easiest free fix — **Formspree**:
+
+1. Sign up at [formspree.io](https://formspree.io) and create a form to get your form ID.
+2. In `index.html`, change both `<form ... action="#">` to `action="https://formspree.io/f/YOUR_ID"` and `method="POST"`.
+
+Or use the WhatsApp button / phone number, which already work.
+
+## 🎨 Changing Colors
+
+Edit the CSS variables at the top of `styles.css`:
 ```css
 :root {
-    --primary-color: #0d9488;    /* Main teal */
-    --secondary-color: #1e3a5f;  /* Navy blue */
-    --accent-color: #f59e0b;     /* Gold accent */
+    --primary-color: #85173a;    /* Burgundy */
+    --secondary-color: #4d0e23;  /* Deep wine */
+    --accent-color: #c8a04b;     /* Rose gold */
 }
 ```
 
-### Fonts
-The template uses:
-- **Playfair Display** - Headings (elegant serif)
-- **Inter** - Body text (clean sans-serif)
-
-Change in the `<head>` of `index.html` via Google Fonts.
-
-### Placeholders to Replace
-Search and replace these patterns:
-- `[Doctor Name]` - Full name
-- `[First Name]` - First name only
-- `[Specialty]` - Medical specialty
-- `[City]` - Location city
-- `[X]` - Numbers (years, patients, etc.)
-- `[Service Name X]` - Your services
-- `[+1-XXX-XXX-XXXX]` - Phone numbers
-- `[email@domain.com]` - Email addresses
-- `[Facebook URL]` - Social media links
-- `[your-domain]` - Your website URL
-
-## 📱 Image Requirements
-
-| Image | Recommended Size | Notes |
-|-------|-----------------|-------|
-| logo.png | 200x60px | Transparent PNG |
-| logo-white.png | 200x60px | White version for footer |
-| doctor-hero.png | 600x800px | Transparent PNG of doctor |
-| doctor-about.jpg | 600x700px | Professional photo |
-| gallery-*.jpg | 800x600px | Clinic/facility photos |
-| patient-*.jpg | 150x150px | Testimonial photos (or use initials) |
-| og-image.jpg | 1200x630px | Social sharing preview |
-
-## 🌐 Free Hosting Options
-
-### GitHub Pages (Recommended)
-1. Create a GitHub account
-2. Create new repository named `yourusername.github.io`
-3. Upload all files
-4. Your site will be live at `https://yourusername.github.io`
-
-### Netlify
-1. Go to [netlify.com](https://netlify.com)
-2. Drag & drop your folder
-3. Get instant live URL
-
-### Vercel
-1. Go to [vercel.com](https://vercel.com)
-2. Import from GitHub or upload
-3. Automatic deployments
-
-## 🔧 Form Handling
-
-The forms currently show a success message but don't send emails. Options:
-
-### Free Options
-1. **Formspree** - Add `action="https://formspree.io/f/YOUR_ID"` to forms
-2. **Netlify Forms** - Add `netlify` attribute to form tag
-3. **Google Forms** - Embed or redirect
-
-### With Backend
-- PHP mail() function
-- Node.js with Nodemailer
-- Any server-side language
-
-## 📈 SEO Checklist
-
-- [x] Semantic HTML5 structure
-- [x] Meta title & description
-- [x] Open Graph tags
-- [x] Twitter Card tags
-- [x] Schema.org structured data
-- [x] Mobile responsive
-- [x] Fast loading
-- [ ] Add Google Analytics
-- [ ] Submit sitemap to Google Search Console
-- [ ] Add Google My Business listing
-
-## 🎯 Performance Tips
-
-1. **Compress images** before uploading (use TinyPNG)
-2. **Enable GZIP** on your hosting
-3. **Use CDN** for faster global delivery
-4. **Minify CSS/JS** for production
-
-## 📞 Support
-
-This is a static template. For customizations:
-- Modify the HTML/CSS/JS directly
-- Hire a web developer for advanced features
-
-## 📄 License
-
-Free for personal and commercial use. Attribution appreciated but not required.
-
 ---
 
-**Made with ❤️ for Healthcare Professionals**
+**Dr. Tejaswini Penugondla • Gynecologist • Srikara Hospitals, Lakdikapul, Hyderabad**
